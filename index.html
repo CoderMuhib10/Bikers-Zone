@@ -4,11 +4,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Biker Zone</title>
+    <title>Go Ride</title>
+    <link rel="shortcut icon" href="./images/icons/favicon.png" type="image/x-icon">
+    <!-- tailwind and daisyUI cdn  -->
 
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap"
+        rel="stylesheet">
+
+    <!-- custom styles in tailwind  -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'bike-primary': '#E76F51',
+                        'bike-primary-bg': 'rgba(231, 111, 81, 0.10)',
+                    }
+                }
+            }
+        }
+    </script>
+
+
+
+
+    <!-- styles -->
+    <style>
+        .font-poppins {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
 </head>
 
-<body>
+<body class="font-poppins">
+    <!-- remember this to align (md:container md:mx-auto) -->
+    <header class="md:container md:mx-auto">
+
+        <nav>
+            <div class="navbar bg-base-100">
+                <!-- remember this to align (flex grow  flex-1) -->
+                <div class="flex-1">
+                    <div class="dropdown">
+                        <label tabindex="0" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </label>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 text-base shadow bg-base-100 rounded-box w-52">
+                            <li><a>Home</a></li>
+                            <li><a>Shop</a></li>
+                            <li><a>News</a></li>
+                            <li><a>Contact</a></li>
+                        </ul>
+                    </div>
+                    <a class=" normal-case text-xl lg:text-3xl font-bold">Go Ride <img src="./images/icons/logo.gif"
+                            width="80px" class="inline"></a>
+
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 text-base font-medium">
+                        <li><a>Home</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>News</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                </div>
+                <div class="">
+                    <a
+                        class=" btn-ghost bg-bike-primary text-white px-5 py-2 lg:pt-4 pb-4 lg:px-12 font-bold text-xl rounded-md">Login</a>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+
+
+    <main class="md:container md:mx-auto"></main>
+
+
+
+
+    <footer></footer>
+
 
 </body>
 
